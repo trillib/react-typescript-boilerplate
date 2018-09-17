@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-import { Nav, NavItem, NavLink, Row } from "reactstrap"
+import { Nav, Navbar, NavItem, NavLink, Row } from "reactstrap"
 
 export interface Props {
 }
@@ -20,13 +20,15 @@ export default class Navigation extends React.Component<Props, State> {
   public render() {
     return (
       <Row>
-        <Nav>
-          <NavItem>
-            <NavLink>
-              <Link to="/overview">Overview</Link>
-            </NavLink>
-          </NavItem>
-        </Nav>
+        <Navbar>
+          <Nav>
+            <NavItem>
+              <NavLink>
+                <Link to="/">Overview</Link>
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Navbar>
       </Row>
     )
   }

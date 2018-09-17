@@ -4,8 +4,8 @@ import {
   Route
 } from 'react-router-dom'
 import { Container } from "reactstrap";
-import Overview from "../components/Overview"
-import Navigation from "./Navigation";
+import Navigation from "../components/Navigation";
+import Overview from "../pages/Overview"
 
 export interface Props {
 }
@@ -19,7 +19,7 @@ export default class DefaultRouter extends React.Component<Props, State> {
       <Router>
         <Container>
           <Navigation />
-          <Route exact={true} path="/overview" component={Overview} />
+          <Route exact={true} path="/" component={Overview} />
         </Container>
       </Router>
     )
