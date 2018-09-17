@@ -1,7 +1,5 @@
 import * as React from 'react';
-import './App.css';
 import DefaultRouter from './routing/Router';
-
 
 class App extends React.Component {
   public render() {

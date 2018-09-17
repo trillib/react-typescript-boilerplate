@@ -10,13 +10,6 @@ export interface State {
 
 export default class Navigation extends React.Component<Props, State> {
 
-  constructor(props: Props) {
-    super(props)
-
-    this.state = {
-    }
-  }
-
   public render() {
     return (
       <Row>
@@ -25,6 +18,11 @@ export default class Navigation extends React.Component<Props, State> {
             <NavItem>
               <NavLink>
                 <Link to="/">Overview</Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>
+                <Link to="/settings">Settings</Link>
               </NavLink>
             </NavItem>
           </Nav>

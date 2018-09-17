@@ -6,6 +6,7 @@ import {
 import { Container } from "reactstrap";
 import Navigation from "../components/Navigation";
 import Overview from "../pages/Overview"
+import Settings from "../pages/Settings";
 
 export interface Props {
 }
@@ -20,6 +21,7 @@ export default class DefaultRouter extends React.Component<Props, State> {
         <Container>
           <Navigation />
           <Route exact={true} path="/" component={Overview} />
+          <Route exact={true} path="/settings" component={Settings} />
         </Container>
       </Router>
     )
